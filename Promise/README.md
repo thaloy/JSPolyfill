@@ -32,7 +32,7 @@ npm run test
 会得到不同的结果
 原因是浏览器和node的eventLoop采用不同的实现
 
-```JavaScipt
+```JavaScript
 setTimeout(function() {
 	console.log('async1');
 	throw 'async1 error';
@@ -40,7 +40,7 @@ setTimeout(function() {
 
 setTimeout(function() {
 	console.log('async2');
-	throw 'async1 error';
+	throw 'async2 error';
 });
 ```
 
