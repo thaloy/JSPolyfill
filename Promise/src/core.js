@@ -145,7 +145,7 @@ const MyPromise = (function() {
 		// 这与node的eventLoop机制有关
 		// 上述代码中是用timeout模拟的microTask
 		// 而timer只是node eventLoop中的一个阶段其中断了当前的eventLoop
-		// 见TODO md
+    // eg: https://github.com/thaloy/JSPolyfill/tree/master/Promise#some-trouble
 		applyCallbacks(rejectedCallbacks, reason);
 	}
 
