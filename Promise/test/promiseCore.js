@@ -11,5 +11,4 @@ const deferred = () => {
 };
 
 MyPromise.deferred = deferred;
-
 module.exports = MyPromise;

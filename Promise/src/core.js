@@ -135,11 +135,15 @@ const MyPromise = (function () { // eslint-disable-line
            *  throw new Error('some error');
            * });
            */
-          try {
-            then.call(x, resolve, reject);
-          } catch (reason) {
-            reject(reason);
-          }
+
+          // 这里需要异步
+          asyncCall(() => {
+            try {
+              then.call(x, resolve, reject);
+            } catch (reason) {
+              reject(reason);
+            }
+          });
 
           return;
         }

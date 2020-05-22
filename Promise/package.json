@@ -6,11 +6,10 @@
   "directories": {
     "test": "test"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "promises-aplus-tests": "^2.1.2"
-	},
+  },
   "scripts": {
     "test": "./node_modules/promises-aplus-tests/lib/cli.js ./test/promiseCore.js"
   },
