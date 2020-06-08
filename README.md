@@ -6,4 +6,4 @@
 
 - **[Promise](https://github.com/thaloy/JSPolyfill/tree/master/Promise)**
 
-- [Generator Controller)(https://github.com/thaloy/JSPolyfill/tree/master/GC)
+- [Generator Controller](https://github.com/thaloy/JSPolyfill/tree/master/GC)
